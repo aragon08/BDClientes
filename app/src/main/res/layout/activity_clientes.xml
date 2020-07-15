@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    tools:context="com.example.orion.bdclientes.Clientes">
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edtnom"
+            android:inputType="textPersonName"
+            android:hint="Nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edtdir"
+            android:inputType="text"
+            android:hint="Dirección"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+        <RadioGroup
+            android:id="@+id/rdgsexo">
+            <RadioButton
+                android:id="@+id/rdbmas"
+                android:text="Masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:id="@+id/rdbfem"
+                android:text="Femenino"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow>
+        <Spinner
+            android:id="@+id/spnedo">
+        </Spinner>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edtedad"
+            android:inputType="number"
+            android:hint="Edad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+        <EditText
+            android:id="@+id/edttel"
+            android:inputType="phone"
+            android:hint="Telefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </TableRow>
+    <TableRow>
+            <EditText
+                android:id="@+id/edtemail"
+                android:inputType="textEmailAddress"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </TableRow>
+
+    <TableRow>
+            <Button
+                android:id="@+id/btnGuardar"
+                android:text="Guardar"
+                />
+    </TableRow>
+
+
+</TableLayout>
